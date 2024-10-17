@@ -1,0 +1,16 @@
+ESQUEMA DE BD.
+
+Usuarios:
+
+_id: Identificador único generado automáticamente.
+nombre: String, requerido.
+email: String, requerido, único.
+contraseña: String, requerido.
+Mascotas:
+
+_id: Identificador único generado automáticamente.
+nombre: String, requerido.
+tipo: String, requerido (por ejemplo, perro o gato).
+raza: String, opcional.
+edad: Número, requerido, debe ser positivo.
+dueño_id: Referencia al _id de la colección Usuarios.
